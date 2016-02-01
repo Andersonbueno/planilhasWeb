@@ -82,9 +82,10 @@ textarea {
 .div-footer{
    
     position:absolute;
-    bottom:0;   
-    color:#6064AC;
-    font-size:11px;
+    bottom:-10px;  
+    left:0;
+    color:#ffffff;
+    font-size:10px;
    
     
 }

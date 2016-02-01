@@ -1,7 +1,7 @@
 ﻿.nav-side-menu {
   overflow: auto;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 200;
   background-color: #3c8dbc;
   position: fixed;
@@ -106,8 +106,8 @@
   
 }
 .nav-side-menu li:hover {
-  border-left: 3px solid #d19b3d;
-  background-color: #4f5b69;
+  border-left: 15px solid #162756;
+  background-color: #3c7adc;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;

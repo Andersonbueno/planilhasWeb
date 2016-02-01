@@ -22,7 +22,7 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 @*<li>@Html.ActionLink("Home", "Index", "Home")</li>*@
-                <li>@Html.ActionLink("Planilha", "Index", "Planilha")</li>
+                @*<li>@Html.ActionLink("Planilha", "Index", "Planilha")</li>*@
             </ul>
             @Html.Partial("_LoginPartial")
         </div>
@@ -30,11 +30,11 @@
 
     <div class="container body-content">
         @RenderBody()
-        <div class="div-footer">
+        @*<div class="div-footer">
 
             <p>Copyright &copy; @DateTime.Now.Year - Dep. Tecnologia Unifisa</p>
 
-        </div>
+        </div>*@
     </div>
 
     @Scripts.Render("~/bundles/jquery")

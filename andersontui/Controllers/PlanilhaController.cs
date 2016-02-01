@@ -129,12 +129,12 @@ namespace Planilhas.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            diluicao_normal dn = db.diluicao_normal.Find(id);
-            if (dn == null)
+            diluicao_normal _d = db.diluicao_normal.Find(id);
+            if (_d == null)
             {
                 return HttpNotFound();
             }
-            return View(dn);
+            return View(_d);
         }
 
         // GET: /CRUD/Criar  
@@ -148,53 +148,53 @@ namespace Planilhas.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(diluicao_normal dn)
+        public ActionResult Create(diluicao_normal _d)
         {
             if (ModelState.IsValid)
             {
-                db.diluicao_normal.Add(dn);
+                db.diluicao_normal.Add(_d);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(dn);
+            return View(_d);
         }
 
         //GET: /CRUD/ EDITAR
 
         public ActionResult Edit(string id = null)
         {
-            diluicao_normal dn = db.diluicao_normal.Find(id);
-            if (dn == null)
+            diluicao_normal _d = db.diluicao_normal.Find(id);
+            if (_d == null)
             {
                 return HttpNotFound();
             }
-            return View(dn);
+            return View(_d);
         }
 
         //POST: /CRUD/ EDITAR
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(diluicao_normal dn)
+        public ActionResult Edit(diluicao_normal _d)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(dn).State = EntityState.Modified;
+                db.Entry(_d).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(dn);
+            return View(_d);
         }
 
         //GET: /CRUD/ DELETAR
         public ActionResult Delete(string id = null)
         {
-            diluicao_normal dn = db.diluicao_normal.Find(id);
-            if (dn == null)
+            diluicao_normal _d = db.diluicao_normal.Find(id);
+            if (_d == null)
             {
                 return HttpNotFound();
             }
-            return View(dn);
+            return View(_d);
         }
 
         //POST: /CRUD/ DELETAR
@@ -202,8 +202,8 @@ namespace Planilhas.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)
         {
-            diluicao_normal dn = db.diluicao_normal.Find(id);
-            db.diluicao_normal.Remove(dn);
+            diluicao_normal _d = db.diluicao_normal.Find(id);
+            db.diluicao_normal.Remove(_d);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
