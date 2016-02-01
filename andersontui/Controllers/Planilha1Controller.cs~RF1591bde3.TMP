@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace andersontui.Controllers
+{
+    public class Planilha1Controller : Controller
+    {
+
+        private diluicao_normalContext db = new diluicao_normalContext();
+        // GET: Planilha1
+        public ActionResult Index()
+        {
+
+
+
+            return View();
+        }
+    }
+}
