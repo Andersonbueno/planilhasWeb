@@ -18,7 +18,7 @@ namespace Planilhas.Models
         public string Sobrenome { get; set; }
 
         [Required(ErrorMessage = "Digite seu email")]
-        [RegularExpression("^[A-Za-z0-9](([_.-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([.-]?[a-zA-Z0-9]+)*)([.][A-Za-z]{2,4})$")]
+        [RegularExpression("^[A-Za-z0-9](([_.-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([.-]?[a-zA-Z0-9]+)*)([.][A-Za-z]{2,4})$", ErrorMessage = "Informe um email válido.")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Digite seu departamento")]
