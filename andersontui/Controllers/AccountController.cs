@@ -24,13 +24,15 @@ namespace Planilhas.Controllers
                 return View(db.userAccount.ToList());
             }
         }
-
+        [AllowAnonymous]
         public ActionResult Register()
         {
             return View();
         }
 
         [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
         public ActionResult Register(UserAccount account)
         {
             if (ModelState.IsValid)
@@ -41,10 +43,10 @@ namespace Planilhas.Controllers
                     db.SaveChanges();
                 }
                 ModelState.Clear();
-                ViewBag.Message = " Usuário cadastrado com Sucesso ";
+                TempData["Message"] = " Usuário cadastrado com Sucesso ";
             }
 
-            return View();
+            return RedirectToAction("Register", "Account");
         }
 
         //Login

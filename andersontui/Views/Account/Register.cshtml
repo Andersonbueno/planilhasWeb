@@ -15,10 +15,10 @@
             @*<h4>Crie sua conta</h4>*@
             <hr />
             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-            @if (ViewBag.Message != null)
+            @if (TempData["Message"] != null)
             {
                 <div class="form-group">
-                    <div class="col-md-10 text-success">@ViewBag.Message</div>
+                    <div class="col-md-6 label-success">@TempData["Message"]</div>
                 </div>
             }
 
