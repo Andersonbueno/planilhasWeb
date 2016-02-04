@@ -69,13 +69,21 @@ namespace Planilhas.Models
         public string Nome { get; set; }
 
         [Required]
-        [Display(Name = "Setor")]
-        public string Setor { get; set; }
+        [Display(Name = "Sobrenome")]
+        public string Sobrenome { get; set; }
 
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
+
+        [Required]
+        [Display(Name = "Departamentos")]
+        public string Departamentos { get; set; }
+
+        [Required]
+        [Display(Name = "Digite seu nome de usuario")]
+        public string Usuario { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "O {0} deve ser no minimo {2} caracteres.", MinimumLength = 6)]

@@ -1,15 +1,14 @@
-﻿
-@*@{
-    ViewBag.Title = "Logado";
-}
+﻿@*@{
+        ViewBag.Title = "Logado";
+    }
 
-@if (Session["ColaboradorId"] != null)
-{*@
-    @*<h4> Bem vindo @Session["Usuario"].ToString()</h4>*@
+    @if (Session["ColaboradorId"] != null)
+    {*@
+@*<h4> Bem vindo @Session["Usuario"].ToString()</h4>*@
 
-    <link href="~/Content/Menu.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+<link href="~/Content/Menu.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<body>
     <div class="nav-side-menu">
         <div class="brand-menu">Menu</div>
         <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
@@ -17,7 +16,7 @@
         <div class="menu-list">
 
             <ul id="menu-content" class="menu-content collapse out">
-                
+
                 <li data-toggle="collapse" data-target="#dashboard" class="collapsed">
                     <i class="fa fa-link"></i> @Html.ActionLink("Diretoria", "Index", "Planilha") <span class="arrow"></span>
                 </li>
@@ -30,7 +29,7 @@
                     <li><a href="#">General</a></li>
                     <li><a href="#">Buttons</a></li>
                     <li><a href="#">Tabs & Accordions</a></li>
-                  
+
                 </ul>
 
 
@@ -85,10 +84,11 @@
                 <li data-toggle="collapse" data-target="#new" class="collapsed">
                     <a href="#"><i class="fa fa-link"></i> Juridico <span class="arrow"></span></a>
 
-                
+
             </ul>
         </div>
     </div>
+</body>
 
 
 }

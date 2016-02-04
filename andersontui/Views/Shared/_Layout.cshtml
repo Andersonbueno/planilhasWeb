@@ -30,6 +30,15 @@
 
     <div class="container body-content">
         @RenderBody()
+        @section SideBar {
+            <ul>
+                <li><a href="#">Navigation Link 1</a></li>
+                <li><a href="#">Navigation Link 2</a></li>
+                <li><a href="#">Navigation Link 3</a></li>
+            </ul>
+        }
+
+        
         @*<div class="div-footer">
 
             <p>Copyright &copy; @DateTime.Now.Year - Dep. Tecnologia Unifisa</p>

@@ -24,6 +24,8 @@ namespace Planilhas.Controllers
                 return View(db.userAccount.ToList());
             }
         }
+
+
         [AllowAnonymous]
         public ActionResult Register()
         {
