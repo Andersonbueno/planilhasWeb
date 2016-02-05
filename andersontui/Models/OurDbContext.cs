@@ -15,8 +15,12 @@ namespace Planilhas.Models
         public DbSet<UserAccount> userAccount { get; set; }
 
         public DbSet<diluicao_normal> diluicao_normal { get; set; }
-         
-        
+
+        public DbSet<Role> Roles { get; set; }
+
+        public DbSet<UserRole> UserRoles { get; set; }
+
+
 
     }
 }
