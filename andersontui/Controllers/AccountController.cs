@@ -17,6 +17,7 @@ namespace Planilhas.Controllers
     public class AccountController : Controller
     {
         //Get: Account
+        [Authorize(Users = "admin")]
         public ActionResult Index()
         {
             using (OurDbContext db = new OurDbContext())

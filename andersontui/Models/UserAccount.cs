@@ -36,5 +36,25 @@ namespace Planilhas.Models
         [DataType(DataType.Password)]
         [Display(Name = "Senha")]
         public string ConfirmeSenha { get; set; }
+
+        public virtual ICollection<UserRole> UserRoles { get; set; }
+    }
+
+    public class Role
+    {
+        [Key]
+        public short RoleId { get; set; }
+        public string RoleName { get; set; }
+        public string RoleDescription { get; set; }
+    }
+
+    public class UserRole
+    {
+        [Key]
+        public int UserRoleId { get; set; }
+        public int UserId { get; set; }
+        public short RoleId { get; set; }
+
+        public virtual Role Role { get; set; }
     }
 }

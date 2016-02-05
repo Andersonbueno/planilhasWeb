@@ -52,6 +52,7 @@ namespace Planilhas.Controllers
                 _d.f_res = (_d.vlr_bem * _d.fdo_reserva) / 100;
                 _d.resumo_seguro = _d.vlr_seguro * _d.prazo;
                 _d.resumo_total = _d.vlr_bem + _d.valor_adm + _d.f_res + _d.resumo_seguro;
+                
 
                 _d.ad_a_vista = _d.ad_a_vista;
 
