@@ -30,9 +30,10 @@ namespace Planilhas.Models
 
         [Required(ErrorMessage = "Senha precisa ser preenchida.")]
         [DataType(DataType.Password)]
+        [StringLength(100, ErrorMessage = "A {0} deve conter no minimo {2} caracteres.", MinimumLength = 6)]
         public string Senha  { get; set; }
 
-        [Compare("Senha", ErrorMessage = "Por favor confirme sua senha")]
+        [Compare("Senha", ErrorMessage = "Por favor repita sua senha")]
         [DataType(DataType.Password)]
         [Display(Name = "Senha")]
         public string ConfirmeSenha { get; set; }
