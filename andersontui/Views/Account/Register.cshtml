@@ -51,13 +51,30 @@
             </div>
 
             <div class="form-group">
-                @Html.LabelFor(model => model.Departamentos, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10 left-addon">
-                    <i class="glyphicon glyphicon-envelope"></i>
-                    @Html.EditorFor(model => model.Departamentos, new { htmlAttributes = new { @class = "form-control", placeholder = "Ex: Financeiro" } })
-                    @Html.ValidationMessageFor(model => model.Departamentos, "", new { @class = "text-danger" })
-                </div>
-            </div>
+                    @*@{
+                        var db = Database.Open("PlanilhasDB");  
+                        var data = db.Query("SELECT RoleId, RoleName FROM Roles");
+                        var items = data.Select(i => new SelectListItem
+                        {
+                            Value = i.RoleId.ToString(),
+                            Text = i.RoleName
+                        });
+                        }
+
+                        @Html.DropDownList("RoleId", "Por favor", items, 4, new { @class = "control-label col-md-2" })
+                        <div class="col-md-10 left-addon">
+                            <i class="glyphicon glyphicon-envelope"></i>
+                            @Html.EditorFor(model => model.Departamentos, new { htmlAttributes = new { @class = "form-control", placeholder = "Ex: Financeiro" } })
+                            @Html.ValidationMessageFor(model => model.Departamentos, "", new { @class = "text-danger" })
+                        </div>*@
+                    
+                            @Html.LabelFor(model => model.Departamentos, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10 left-addon">
+                                    <i class="glyphicon glyphicon-envelope"></i>
+                                    @Html.EditorFor(model => model.Departamentos, new { htmlAttributes = new { @class = "form-control", placeholder = "Ex: Financeiro" } })
+                                    @Html.ValidationMessageFor(model => model.Departamentos, "", new { @class = "text-danger" })
+                                </div>
+                        </div>
 
             <div class="form-group">
                 @Html.LabelFor(model => model.Usuario, htmlAttributes: new { @class = "control-label col-md-2" })

@@ -354,3 +354,9 @@ C:\Users\unifisa\Documents\Visual Studio 2015\Projects\Planilhas\PlanilhasWebNew
 C:\Users\unifisa\Documents\Visual Studio 2015\Projects\Planilhas\PlanilhasWebNew\andersontui\obj\Debug\Planilhas.csprojResolveAssemblyReference.cache
 C:\Users\unifisa\Documents\Visual Studio 2015\Projects\Planilhas\PlanilhasWebNew\andersontui\obj\Debug\andersontui.dll
 C:\Users\unifisa\Documents\Visual Studio 2015\Projects\Planilhas\PlanilhasWebNew\andersontui\obj\Debug\andersontui.pdb
+C:\Users\unifisa\Documents\Visual Studio 2015\Projects\Planilhas\PlanilhasWebNew\andersontui\bin\WebMatrix.Data.dll
+C:\Users\unifisa\Documents\Visual Studio 2015\Projects\Planilhas\PlanilhasWebNew\andersontui\bin\WebMatrix.WebData.dll
+C:\Users\unifisa\Documents\Visual Studio 2015\Projects\Planilhas\PlanilhasWebNew\andersontui\bin\WebMatrix.Data.xml
+C:\Users\unifisa\Documents\Visual Studio 2015\Projects\Planilhas\PlanilhasWebNew\andersontui\bin\WebMatrix.WebData.xml
+C:\Users\unifisa\Documents\Visual Studio 2015\Projects\Planilhas\PlanilhasWebNew\andersontui\bin\pt-br\WebMatrix.Data.resources.dll
+C:\Users\unifisa\Documents\Visual Studio 2015\Projects\Planilhas\PlanilhasWebNew\andersontui\bin\pt-br\WebMatrix.WebData.resources.dll

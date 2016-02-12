@@ -38,6 +38,7 @@ namespace Planilhas.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Register(UserAccount account)
         {
+
             if (ModelState.IsValid)
             {
                 using (OurDbContext db = new OurDbContext())
@@ -50,7 +51,10 @@ namespace Planilhas.Controllers
             }
 
             return RedirectToAction("Register", "Account");
+
         }
+
+
 
         //Login
         public ActionResult Login()

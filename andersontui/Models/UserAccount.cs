@@ -25,14 +25,16 @@ namespace Planilhas.Models
         [Display(Name = "Depart.")]
         public string Departamentos { get; set; }
 
+       
         [Required(ErrorMessage = "Usuario precisa ser preenchido.")]
         public string Usuario { get; set; }
 
-        [Required(ErrorMessage = "Senha precisa ser preenchida.")]
+        [Required(ErrorMessage = "Senha precisa ser preenchida.", AllowEmptyStrings = false)]
         [DataType(DataType.Password)]
         [StringLength(100, ErrorMessage = "A {0} deve conter no minimo {2} caracteres.", MinimumLength = 6)]
         public string Senha  { get; set; }
 
+        [Required(AllowEmptyStrings =false)]
         [Compare("Senha", ErrorMessage = "Por favor repita sua senha")]
         [DataType(DataType.Password)]
         [Display(Name = "Senha")]
