@@ -8,6 +8,18 @@
 
 <link href="~/Content/Menu.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<script>
+$(document).click(function (e)
+{
+    var container = $("li.collapsed");
+
+    if (container.has(e.target).length === 0)
+    {
+        container.hide();
+    }
+});
+</script>
 <body>
     <div class="nav-side-menu">
         <div class="brand-menu">Menu</div>
@@ -25,52 +37,52 @@
                 </li>
 
                 <li data-toggle="collapse" data-target="#products" class="collapsed">
-                    <a href="javascript: void(0)" role="menuitem" id="1"><i class="fa fa-link"></i> Atendimento <span class="arrow"></span></a>
+                    <a href="javascript: void(0)" role="menuitem"><i class="fa fa-link"></i> Atendimento <span class="arrow"></span></a>
                 </li>
               
 
 
                 <li data-toggle="collapse" data-target="#service" class="collapsed">
-                    <a href="javascript: void(0)" role="menuitem" id="2"><i class="fa fa-link"></i> Imóvel <span class="arrow"></span></a>
+                    <a href="javascript: void(0)" role="menuitem"><i class="fa fa-link"></i> Imóvel <span class="arrow"></span></a>
                 </li>
                 
 
 
                 <li data-toggle="collapse" data-target="#new" class="collapsed">
-                    <a href="javascript: void(0)" role="menuitem" id="3"><i class="fa fa-link"></i> RH <span class="arrow"></span></a>
+                    <a href="javascript: void(0)" role="menuitem"><i class="fa fa-link"></i> RH <span class="arrow"></span></a>
                 </li>
                
 
                 <li data-toggle="collapse" data-target="#new" class="collapsed">
-                    <a href="javascript: void(0)" role="menuitem" id="4"><i class="fa fa-link"></i> Tecnologia <span class="arrow"></span></a>
+                    <a href="javascript: void(0)" role="menuitem"><i class="fa fa-link"></i> Tecnologia <span class="arrow"></span></a>
                 </li>
 
                 <li data-toggle="collapse" data-target="#new" class="collapsed">
-                    <a href="javascript: void(0)" role="menuitem" id="5"><i class="fa fa-link"></i> Auditoria <span class="arrow"></span></a>
+                    <a href="javascript: void(0)" role="menuitem" ><i class="fa fa-link"></i> Auditoria <span class="arrow"></span></a>
 
                 <li data-toggle="collapse" data-target="#new" class="collapsed">
-                    <a href="javascript: void(0)" role="menuitem" id="6"><i class="fa fa-link"></i> Cobrança <span class="arrow"></span></a>
+                    <a href="javascript: void(0)" role="menuitem" ><i class="fa fa-link"></i> Cobrança <span class="arrow"></span></a>
 
                 <li data-toggle="collapse" data-target="#new" class="collapsed">
-                    <a href="javascript: void(0)" role="menuitem" id="7"><i class="fa fa-link"></i> Reativação <span class="arrow"></span></a>
+                    <a href="javascript: void(0)" role="menuitem"><i class="fa fa-link"></i> Reativação <span class="arrow"></span></a>
 
                 <li data-toggle="collapse" data-target="#new" class="collapsed">
-                  <a href="javascript: void(0)" role="menuitem" id="8"><i class="fa fa-link"></i> Operações <span class="arrow"></span></a>
+                  <a href="javascript: void(0)" role="menuitem" ><i class="fa fa-link"></i> Operações <span class="arrow"></span></a>
 
                 <li data-toggle="collapse" data-target="#new" class="collapsed">
-                    <a href="javascript: void(0)" role="menuitem" id="9"><i class="fa fa-link"></i> Contabilidade <span class="arrow"></span></a>
+                    <a href="javascript: void(0)" role="menuitem" ><i class="fa fa-link"></i> Contabilidade <span class="arrow"></span></a>
 
                 <li data-toggle="collapse" data-target="#new" class="collapsed">
-                   <a href="javascript: void(0)" role="menuitem" id="10"><i class="fa fa-link"></i> Compras <span class="arrow"></span></a>
+                   <a href="javascript: void(0)" role="menuitem" ><i class="fa fa-link"></i> Compras <span class="arrow"></span></a>
 
                 <li data-toggle="collapse" data-target="#new" class="collapsed">
-                    <a href="javascript: void(0)" role="menuitem" id="11"><i class="fa fa-link"></i> Financeiro <span class="arrow"></span></a>
+                    <a href="javascript: void(0)" role="menuitem"><i class="fa fa-link"></i> Financeiro <span class="arrow"></span></a>
 
                 <li data-toggle="collapse" data-target="#new" class="collapsed">
-                    <a href="javascript: void(0)" role="menuitem" id="12"><i class="fa fa-link"></i> Cadastro <span class="arrow"></span></a>
+                    <a href="javascript: void(0)" role="menuitem"><i class="fa fa-link"></i> Cadastro <span class="arrow"></span></a>
 
                 <li data-toggle="collapse" data-target="#new" class="collapsed">
-                    <a href="javascript: void(0)" role="menuitem" id="13"><i class="fa fa-link"></i> Juridico <span class="arrow"></span></a>
+                    <a href="javascript: void(0)" role="menuitem"><i class="fa fa-link"></i> Juridico <span class="arrow"></span></a>
 
 
             </ul>
