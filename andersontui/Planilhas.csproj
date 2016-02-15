@@ -256,12 +256,12 @@
     <Content Include="Views\Planilha\Details.cshtml" />
     <Content Include="Views\Planilha\Create.cshtml" />
     <Content Include="Views\Planilha\Delete.cshtml" />
-    <Content Include="Views\Planilha\Edit1.cshtml" />
     <Content Include="Views\Account\RoleIndex.cshtml" />
     <Content Include="Views\Roles\Create.cshtml" />
     <Content Include="Views\Roles\Edit.cshtml" />
     <Content Include="Views\Roles\Index.cshtml" />
     <Content Include="Views\Roles\ManageUserRoles.cshtml" />
+    <Content Include="Views\Planilha\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
