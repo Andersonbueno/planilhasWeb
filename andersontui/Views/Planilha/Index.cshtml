@@ -434,9 +434,9 @@
                                 </div>
                                 <div class="col-lg-10">
                                     <input type="submit" value="Incluir" />
-                                    <input type="submit" value="Alterar" />
-                                    <input type="submit" value="Consultar" />
-                                    <input type="submit" value="Excluir" onclick="window.location.href='@Url.Action("Delete","Planilhas", new { id = Request.QueryString["ID"] })" />
+                                    <input type="button" value="Alterar" />
+                                    <input type="button" value="Consultar" />
+                                    <input type="button" value="Delete" onclick="location.href='@Url.Action("Planilha", "Delete", new { id = string })'" />
                                     <br />
                                 </div>
 

@@ -195,7 +195,7 @@ namespace Planilhas.Controllers
             {
                 return HttpNotFound();
             }
-            return PartialView("~/Views/Planilha/Delete.cshtml");
+            return View(_d);
         }
 
         //POST: /CRUD/ DELETAR
