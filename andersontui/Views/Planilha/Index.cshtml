@@ -432,11 +432,17 @@
 
 
                                 </div>
-
-                                <input type="submit" value="Atualizar Planilha" />
-                                <input type="submit" value="Consultar" />
+                                <div class="col-lg-10">
+                                    <input type="submit" value="Incluir" />
+                                    <input type="submit" value="Alterar" />
+                                    <input type="submit" value="Consultar" />
+                                    <input type="submit" value="Excluir" onclick="window.location.href='@Url.Action("Delete","Planilhas", new { id = Request.QueryString["ID"] })" />
+                                    <br />
+                                </div>
 
                             </form>
+                           
+
                         </div>
                         <!-- /.row (nested) -->
                     </div>
@@ -446,6 +452,7 @@
             </div>
             <!-- /.col-lg-12 -->
         </div>
+            
                 <!-- /.row -->
             <!--</div>  -->
         <!-- /#page-wrapper -->
