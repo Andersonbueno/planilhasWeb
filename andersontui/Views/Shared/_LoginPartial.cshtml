@@ -14,77 +14,52 @@
        
     </ul>
     }
-    <link href="~/Content/Menu.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <body>
-        <div class="nav-side-menu">
-            <div class="brand-menu">Menu</div>
-            <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
 
-            <div class="menu-list">
+    
 
-                <ul id="menu-content" class="menu-content collapse out">
+    <ul class="nav navbar-nav navbar-left">
+        
+        <li>@Html.ActionLink("Diretoria", "Index", "Planilha")</li>
+       
+        <li>@Html.ActionLink("Atendimento", "Index", "Planilha")</li>
 
+        <li>@Html.ActionLink("Imóvel", "Index", "Planilha")</li>
+        
+        <li>@Html.ActionLink("RH", "Index", "Planilha")</li>
 
-                    <li data-toggle="collapse" data-target="#dashboard" class="collapsed">
-                        <div id="0">
-                            <i class="fa fa-link"></i> @Html.ActionLink("Diretoria", "Index", "Planilha") <span class="arrow"></span>
-                        </div>
-                    </li>
+        <li>@Html.ActionLink("TI", "Index", "Planilha")</li>
 
-                    <li data-toggle="collapse" data-target="#products" class="collapsed">
-                        <a href="" role="menuitem"><i class="fa fa-link"></i> Atendimento <span class="arrow"></span></a>
-                    </li>
+        <li>@Html.ActionLink("Auditoria", "Index", "Planilha")</li>
 
+        <li>@Html.ActionLink("Cobrança", "Index", "Planilha")</li>
 
+        <li>@Html.ActionLink("Reativação", "Index", "Planilha")</li>
 
-                    <li data-toggle="collapse" data-target="#service" class="collapsed">
-                        <a href="" role="menuitem"><i class="fa fa-link"></i> Imóvel <span class="arrow"></span></a>
-                    </li>
+        <li>@Html.ActionLink("Operações", "Index", "Planilha")</li>
 
+        <li>@Html.ActionLink("Contabilidade", "Index", "Planilha")</li>
 
+        <li>@Html.ActionLink("Compras", "Index", "Planilha")</li>
 
-                    <li data-toggle="collapse" data-target="#new" class="collapsed">
-                        <a href="javascript: void(0)" role="menuitem"><i class="fa fa-link"></i> RH <span class="arrow"></span></a>
-                    </li>
+        <li>@Html.ActionLink("Financeiro", "Index", "Planilha")</li>
 
+        <li>@Html.ActionLink("Cadastro", "Index", "Planilha")</li>
 
-                    <li data-toggle="collapse" data-target="#new" class="collapsed">
-                        <a href="javascript: void(0)" role="menuitem"><i class="fa fa-link"></i> Tecnologia <span class="arrow"></span></a>
-                    </li>
-
-                    <li data-toggle="collapse" data-target="#new" class="collapsed">
-                        <a href="javascript: void(0)" role="menuitem"><i class="fa fa-link"></i> Auditoria <span class="arrow"></span></a>
-
-                    <li data-toggle="collapse" data-target="#new" class="collapsed">
-                        <a href="javascript: void(0)" role="menuitem"><i class="fa fa-link"></i> Cobrança <span class="arrow"></span></a>
-
-                    <li data-toggle="collapse" data-target="#new" class="collapsed">
-                        <a href="javascript: void(0)" role="menuitem"><i class="fa fa-link"></i> Reativação <span class="arrow"></span></a>
-
-                    <li data-toggle="collapse" data-target="#new" class="collapsed">
-                        <a href="javascript: void(0)" role="menuitem"><i class="fa fa-link"></i> Operações <span class="arrow"></span></a>
-
-                    <li data-toggle="collapse" data-target="#new" class="collapsed">
-                        <a href="javascript: void(0)" role="menuitem"><i class="fa fa-link"></i> Contabilidade <span class="arrow"></span></a>
-
-                    <li data-toggle="collapse" data-target="#new" class="collapsed">
-                        <a href="javascript: void(0)" role="menuitem"><i class="fa fa-link"></i> Compras <span class="arrow"></span></a>
-
-                    <li data-toggle="collapse" data-target="#new" class="collapsed">
-                        <a href="javascript: void(0)" role="menuitem"><i class="fa fa-link"></i> Financeiro <span class="arrow"></span></a>
-
-                    <li data-toggle="collapse" data-target="#new" class="collapsed">
-                        <a href="javascript: void(0)" role="menuitem"><i class="fa fa-link"></i> Cadastro <span class="arrow"></span></a>
-
-                    <li data-toggle="collapse" data-target="#new" class="collapsed">
-                        <a href="javascript: void(0)" role="menuitem"><i class="fa fa-link"></i> Juridico <span class="arrow"></span></a>
+        <li>@Html.ActionLink("Jurídico", "Index", "Planilha")</li>
 
 
-                </ul>
-            </div>
-        </div>
-    </body>
+
+
+
+
+
+
+    </ul>
+
+   
+
+    
+
 }
 else
 {

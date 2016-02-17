@@ -761,6 +761,8 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  background-color:transparent;
+
 }
 
 .container:before,
@@ -926,7 +928,7 @@ pre code {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 750px;
+    max-width: 950px;
   }
   .col-sm-1,
   .col-sm-2,
@@ -3846,7 +3848,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: dodgerblue;
+  color:white;
 }
 
 .nav > li.disabled > a {
@@ -4227,7 +4230,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand {
-    margin-left: -15px;
+   
   }
 }
 
@@ -4308,8 +4311,26 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 @media (min-width: 768px) {
-  .navbar-left {
-    float: left !important;
+    .navbar-left {
+        float: left !important;
+        font-size: 13px;
+        width: 1140px;
+        border: 1px thick gray;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        z-index: 999999990;
+        max-width: 1400px;
+        background-color: #2075BC;
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 7px;
+    }
+    
+    .navbar-left > li > a
+{
+        color:white;
+}
+
+   
+
   }
   .navbar-right {
     float: right !important;

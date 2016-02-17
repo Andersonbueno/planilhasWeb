@@ -81,7 +81,7 @@ textarea {
 
 .div-footer{
    
-    position:absolute;
+    position:relative;
     bottom:-10px;  
     left:0;
     color:blue;
