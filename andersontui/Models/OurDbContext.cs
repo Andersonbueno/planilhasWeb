@@ -7,7 +7,7 @@ using System.Data.Entity;
 
 namespace Planilhas.Models
 {
-    public   class OurDbContext : DbContext
+    public class OurDbContext : DbContext
     {
         public OurDbContext():base(System.Configuration.ConfigurationManager.ConnectionStrings["OurConnectionString"].ConnectionString)
         {
