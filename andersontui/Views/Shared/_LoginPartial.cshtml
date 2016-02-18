@@ -19,10 +19,13 @@
 
     <ul class="nav navbar-nav navbar-left">
 
-        
-        <li>@Html.ActionLink("Diretoria", "Index", "Planilha")</li>        
-     
+        @if (User.IsInRole("1")) { 
+        <li>@Html.ActionLink("Diretoria", "Index", "Planilha")</li>      
+        }  
+
+        @if (User.IsInRole("2")) { 
         <li>@Html.ActionLink("Atendimento", "", "")</li>
+        }
 
         <li>@Html.ActionLink("Imóvel", "", "")</li>
         
