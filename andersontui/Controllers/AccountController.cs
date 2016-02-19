@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.Linq;
 using System.Security.Claims;
@@ -17,7 +17,7 @@ namespace Planilhas.Controllers
 
     public class AccountController : Controller
     {
-      
+
 
         //Get: Account
         [Authorize(Users = "admin")]
@@ -33,6 +33,7 @@ namespace Planilhas.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
+
             return View();
         }
 
@@ -44,6 +45,7 @@ namespace Planilhas.Controllers
 
             if (ModelState.IsValid)
             {
+                
                 using (OurDbContext db = new OurDbContext())
                 {
                     db.userAccount.Add(account);
@@ -55,7 +57,21 @@ namespace Planilhas.Controllers
 
             return RedirectToAction("Register", "Account");
 
+            
+
+
         }
+
+        //public ActionResult TipoDepartamento()
+        //{
+        //    using (OurDbContext db = new OurDbContext())
+
+        //     ViewBag.TiposDepartamento = new SelectList(db.Roles, "RoleID", "RoleName");
+
+        //    return View();
+            
+        //}
+
 
 
 
