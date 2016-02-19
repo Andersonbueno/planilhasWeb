@@ -1,0 +1,23 @@
+@Styles.Render("~/Content/Lista.css")
+
+
+<div class="col-md-4">
+    <ul class="lista-estilo">
+        <li>Diluição Normal @Html.ActionLink("[Ver]", "Index", "Planilha")  @Html.ActionLink("[Editar]", "Index", "Planilha") @Html.ActionLink("[Excluir]", "Index", "Planilha")</li>
+    </ul>
+</div>
+
+
+
+<div class="col-md-4">
+    <ul class="lista-estilo">
+        <li>Diluição especial @Html.ActionLink("[Ver]", "Index", "Planilha")  @Html.ActionLink("[Editar]", "Index", "Planilha") @Html.ActionLink("[Excluir]", "Index", "Planilha")</li>
+    </ul>
+</div>
+
+<div class="col-md-4">
+    <ul class="lista-estilo">
+        <li>Cálculo forçado normal @Html.ActionLink("[Ver]", "Index", "Planilha")  @Html.ActionLink("[Editar]", "Index", "Planilha") @Html.ActionLink("[Excluir]", "Index", "Planilha")</li>
+    </ul>
+</div>
+
