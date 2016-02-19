@@ -1,4 +1,4 @@
-﻿@using Microsoft.AspNet.Identity
+@using Microsoft.AspNet.Identity
 @if (Request.IsAuthenticated)
 {
     using (Html.BeginForm("Logoff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
@@ -9,7 +9,10 @@
         <li>
             @Html.ActionLink("Bem vindo " + User.Identity.GetUserName() + "", "Logado", "Account", routeValues: null, htmlAttributes: new { title = "Manage" })
         </li>
+
+     
         <li> @Html.ActionLink("Alterar senha", "ChangePassword", "Manage")</li>
+
         <li><a href="javascript:document.getElementById('logoutForm').submit()">Sair</a></li>
        
     </ul>
@@ -18,17 +21,12 @@
     
 
     <ul class="nav navbar-nav navbar-left">
-
-
-
-        @if (User.IsInRole("1")) { 
-        <li>@Html.ActionLink("Diretoria", "Index", "Planilha")</li>      
-        }  
-
-        @if (User.IsInRole("2")) { 
+                
+        
+       <li>@Html.ActionLink("Diretoria", "ListaDiretoria", "Planilha")</li>      
+        
         <li>@Html.ActionLink("Atendimento", "", "")</li>
-        }
-
+        
         <li>@Html.ActionLink("Imóvel", "", "")</li>
         
         <li>@Html.ActionLink("RH", "", "")</li>
@@ -53,18 +51,9 @@
 
         <li>@Html.ActionLink("Jurídico", "", "")</li>
 
-
-
-
-
-
-
-
+       
     </ul>
-
-   
-
-    
+      
 
 }
 else
