@@ -18,7 +18,7 @@ namespace Planilhas.Controllers
         public ActionResult Index()
         {
             diluicao_normal _d = new diluicao_normal();
-            _d = db.diluicao_normal.Where(w => w.ID != 0).FirstOrDefault();
+            //_d = db.diluicao_normal.Where(w => w.ID != 0).FirstOrDefault();
             if (_d != null)
             {
 
